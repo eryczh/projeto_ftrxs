@@ -2,7 +2,7 @@ import con from "./connection.js";
 
 export async function userSave(user) {
   let command = `
-    insert into tb_admin (email_adm, senha_adm)
+    insert into tb_admin (nome_adm, email_adm, senha_adm)
                   values (?, ?, ?)
   `
 
